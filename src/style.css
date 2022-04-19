@@ -1,0 +1,131 @@
+:root {
+  --button: #ff0000;
+  --main-background: #c4c4c4;
+  --background: #e5e5e5;
+  --text: #000;
+  --footer: #000;
+  --text-description: #9c9696;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  color: var(--text);
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 1440px;
+  height: 1080px;
+  background-color: var(--background);
+  margin: 0 auto;
+}
+
+header {
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* position: absolute; */
+  z-index: 100;
+  margin-top: 4rem;
+  background-color: transparent;
+}
+
+.navbar .menu {
+  height: 4.8rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 9rem;
+}
+
+.menu li a {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.search-and-bag {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+.search {
+  display: flex;
+}
+
+.search input {
+  width: 22rem;
+  height: 4.5rem;
+  padding-left: 4rem;
+  background-color: #FFF;
+  background-image: url(./assets/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 5%;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.search img {
+  background-color: #FFF;
+}
+
+.shoe-sample {
+  display: flex;
+}
+
+.info-price-and-sale {
+  width: 54rem;
+  height: 91.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box{
+width: 35.7rem;
+}
+
+.gallery-sample {
+  width: 90rem;
+  height: 91.4rem;
+  background-color: var(--main-background);
+}
+
+.title-shoe{
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 7rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-description);
+  margin-bottom: 4rem;
+}
+
+.price {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.btn-purchase {
+  padding: 3rem 7.7rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #FFF;
+  background-color: var(--button);
+  cursor: pointer;
+}
