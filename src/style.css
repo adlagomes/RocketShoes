@@ -27,7 +27,6 @@ html {
 body {
   width: 1440px;
   height: 1080px;
-  background-color: var(--background);
   margin: 0 auto;
 }
 
@@ -52,6 +51,11 @@ header {
 .menu li a {
   font-size: 2.4rem;
   font-weight: 700;
+  transition: 200ms ease-in-out;
+}
+
+.menu li a:hover {
+  color: var(--button);
 }
 
 .search-and-bag {
@@ -67,7 +71,7 @@ header {
   width: 22rem;
   height: 4.5rem;
   padding-left: 4rem;
-  background-color: #FFF;
+  background-color: #fff;
   background-image: url(./assets/icon-search.svg);
   background-repeat: no-repeat;
   background-position: 5%;
@@ -76,7 +80,7 @@ header {
 }
 
 .search img {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .shoe-sample {
@@ -89,10 +93,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--background);
 }
 
-.info-box{
-width: 35.7rem;
+.info-box {
+  width: 35.7rem;
 }
 
 .gallery-sample {
@@ -108,18 +113,36 @@ width: 35.7rem;
 
 .big-picture {
   margin-top: 17.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mini-gallery {
+.big-picture img {
+  width: 60rem;
+  height: 51rem;
+}
+
+.gallery-slider {
+  width: 87.7rem;
+  height: 19.6rem;
   display: flex;
   gap: 3.7rem;
 }
 
-.mini-gallery li a img:hover {
-  border-bottom: .5rem solid var(--button)
+
+.gallery-slider li a img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
 }
 
-.title-shoe{
+.gallery-slider li a img:hover {
+  border-bottom: 0.5rem solid var(--button);
+}
+
+.title-shoe {
   font-size: 6rem;
   font-weight: 700;
   line-height: 7rem;
@@ -143,7 +166,7 @@ width: 35.7rem;
   padding: 3rem 7.7rem;
   font-size: 2.4rem;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   background-color: var(--button);
   cursor: pointer;
 }
@@ -154,6 +177,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--background);
+}
+
+.media {
+  align-items: flex-end;
 }
 
 .social ul {
@@ -177,5 +205,5 @@ footer {
 .explore a {
   font-size: 2.41rem;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
 }
